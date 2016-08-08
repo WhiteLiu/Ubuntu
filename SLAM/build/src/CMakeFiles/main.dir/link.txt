@@ -1,1 +1,1 @@
-g++       CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main  -L/home/ai/Git/SLAM/lib -rdynamic 
+g++     -Wno-deprecated     CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main  -L/home/ai/Git/SLAM/lib -rdynamic 

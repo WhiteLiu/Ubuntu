@@ -1,1 +1,2 @@
+/home/ai/Git/SLAM/build/src/CMakeFiles/generate_pointcloud.dir
 /home/ai/Git/SLAM/build/src/CMakeFiles/main.dir
