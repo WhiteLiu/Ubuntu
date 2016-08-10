@@ -56,18 +56,57 @@ CMAKE_BINARY_DIR = /home/ai/Git/SLAM/build
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/detectFeatures.dir/all
 src/all: src/CMakeFiles/generate_pointcloud.dir/all
 src/all: src/CMakeFiles/main.dir/all
+src/all: src/CMakeFiles/slambase.dir/all
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/detectFeatures.dir/clean
 src/clean: src/CMakeFiles/generate_pointcloud.dir/clean
 src/clean: src/CMakeFiles/main.dir/clean
+src/clean: src/CMakeFiles/slambase.dir/clean
 .PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
 src/preinstall:
 .PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/detectFeatures.dir
+
+# All Build rule for target.
+src/CMakeFiles/detectFeatures.dir/all: src/CMakeFiles/slambase.dir/all
+	$(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/depend
+	$(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ai/Git/SLAM/build/CMakeFiles  1
+	@echo "Built target detectFeatures"
+.PHONY : src/CMakeFiles/detectFeatures.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/detectFeatures.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/detectFeatures.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/Git/SLAM/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/detectFeatures.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/Git/SLAM/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/detectFeatures.dir/rule
+
+# Convenience name for target.
+detectFeatures: src/CMakeFiles/detectFeatures.dir/rule
+.PHONY : detectFeatures
+
+# clean rule for target.
+src/CMakeFiles/detectFeatures.dir/clean:
+	$(MAKE) -f src/CMakeFiles/detectFeatures.dir/build.make src/CMakeFiles/detectFeatures.dir/clean
+.PHONY : src/CMakeFiles/detectFeatures.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/detectFeatures.dir/clean
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/generate_pointcloud.dir
@@ -76,7 +115,7 @@ src/preinstall:
 src/CMakeFiles/generate_pointcloud.dir/all:
 	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/depend
 	$(MAKE) -f src/CMakeFiles/generate_pointcloud.dir/build.make src/CMakeFiles/generate_pointcloud.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ai/Git/SLAM/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ai/Git/SLAM/build/CMakeFiles  2
 	@echo "Built target generate_pointcloud"
 .PHONY : src/CMakeFiles/generate_pointcloud.dir/all
 
@@ -111,7 +150,7 @@ clean: src/CMakeFiles/generate_pointcloud.dir/clean
 src/CMakeFiles/main.dir/all:
 	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
 	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ai/Git/SLAM/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ai/Git/SLAM/build/CMakeFiles  3
 	@echo "Built target main"
 .PHONY : src/CMakeFiles/main.dir/all
 
@@ -137,6 +176,41 @@ src/CMakeFiles/main.dir/clean:
 
 # clean rule for target.
 clean: src/CMakeFiles/main.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/slambase.dir
+
+# All Build rule for target.
+src/CMakeFiles/slambase.dir/all:
+	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/depend
+	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ai/Git/SLAM/build/CMakeFiles  4
+	@echo "Built target slambase"
+.PHONY : src/CMakeFiles/slambase.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/slambase.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/slambase.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/Git/SLAM/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/slambase.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ai/Git/SLAM/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/slambase.dir/rule
+
+# Convenience name for target.
+slambase: src/CMakeFiles/slambase.dir/rule
+.PHONY : slambase
+
+# clean rule for target.
+src/CMakeFiles/slambase.dir/clean:
+	$(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/clean
+.PHONY : src/CMakeFiles/slambase.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/slambase.dir/clean
 .PHONY : clean
 
 #=============================================================================

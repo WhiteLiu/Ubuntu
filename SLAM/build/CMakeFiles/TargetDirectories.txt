@@ -1,2 +1,4 @@
+/home/ai/Git/SLAM/build/src/CMakeFiles/detectFeatures.dir
 /home/ai/Git/SLAM/build/src/CMakeFiles/generate_pointcloud.dir
 /home/ai/Git/SLAM/build/src/CMakeFiles/main.dir
+/home/ai/Git/SLAM/build/src/CMakeFiles/slambase.dir
