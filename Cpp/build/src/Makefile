@@ -99,6 +99,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/abc.dir/rule:
+	cd /home/ai/Git/Cpp/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/abc.dir/rule
+.PHONY : src/CMakeFiles/abc.dir/rule
+
+# Convenience name for target.
+abc: src/CMakeFiles/abc.dir/rule
+.PHONY : abc
+
+# fast build rule for target.
+abc/fast:
+	cd /home/ai/Git/Cpp/build && $(MAKE) -f src/CMakeFiles/abc.dir/build.make src/CMakeFiles/abc.dir/build
+.PHONY : abc/fast
+
+# Convenience name for target.
 src/CMakeFiles/main.dir/rule:
 	cd /home/ai/Git/Cpp/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
 .PHONY : src/CMakeFiles/main.dir/rule
@@ -111,6 +125,30 @@ main: src/CMakeFiles/main.dir/rule
 main/fast:
 	cd /home/ai/Git/Cpp/build && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+abc.o: abc.cpp.o
+.PHONY : abc.o
+
+# target to build an object file
+abc.cpp.o:
+	cd /home/ai/Git/Cpp/build && $(MAKE) -f src/CMakeFiles/abc.dir/build.make src/CMakeFiles/abc.dir/abc.cpp.o
+.PHONY : abc.cpp.o
+
+abc.i: abc.cpp.i
+.PHONY : abc.i
+
+# target to preprocess a source file
+abc.cpp.i:
+	cd /home/ai/Git/Cpp/build && $(MAKE) -f src/CMakeFiles/abc.dir/build.make src/CMakeFiles/abc.dir/abc.cpp.i
+.PHONY : abc.cpp.i
+
+abc.s: abc.cpp.s
+.PHONY : abc.s
+
+# target to generate assembly for a file
+abc.cpp.s:
+	cd /home/ai/Git/Cpp/build && $(MAKE) -f src/CMakeFiles/abc.dir/build.make src/CMakeFiles/abc.dir/abc.cpp.s
+.PHONY : abc.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -142,9 +180,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... abc"
 	@echo "... edit_cache"
 	@echo "... main"
 	@echo "... rebuild_cache"
+	@echo "... abc.o"
+	@echo "... abc.i"
+	@echo "... abc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

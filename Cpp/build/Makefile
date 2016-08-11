@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named abc
+
+# Build rule for target.
+abc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 abc
+.PHONY : abc
+
+# fast build rule for target.
+abc/fast:
+	$(MAKE) -f src/CMakeFiles/abc.dir/build.make src/CMakeFiles/abc.dir/build
+.PHONY : abc/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -119,6 +132,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... abc"
 	@echo "... main"
 .PHONY : help
 

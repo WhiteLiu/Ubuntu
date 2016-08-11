@@ -1,0 +1,2 @@
+/home/ai/Git/Cpp/src/CMakeFiles/abc.dir
+/home/ai/Git/Cpp/src/CMakeFiles/main.dir
